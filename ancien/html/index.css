@@ -1,0 +1,89 @@
+body
+{
+	font-family: source code pro, Calibri, serif; /*police*/
+	margin: 0px;
+	padding: 0px;
+	
+	background-image: url("potager.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top left;
+	background-position: 180px 0px;
+	background-size: 100%;
+}
+/*--------------------en tete------------------*/
+
+/*-----------------articles-----------------*/
+section{
+	width: 1100px;
+	border:2px solid;
+	background-color: gray;
+	text-align: left;
+}
+.article {
+	position: relative;
+	top: 25px; 
+	left: 190px;
+}
+
+.reseau{
+	position: relative;
+	top: 80px; 
+	left: 190px;
+}
+
+
+/*------------------menu déroulant------------------*/
+nav {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: 180px;
+}
+nav ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+nav li {
+   background-color:gray;
+   border-right: 1px solid;
+   border-bottom: 1px solid;
+}
+nav li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: silver;
+   border:none;
+   margin:0
+}
+nav a {
+  display:block;
+  text-decoration: none;
+  color: black;
+  padding: 15px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+nav ul li a, nav li:hover li a {
+  font-size:1em
+}
+nav li:hover {
+	border-left: 5px solid #24a925;
+    background-color: RGBa(136, 173, 145, 1);
+}
+
+nav li:hover li {
+  max-height: 15em;
+}
+
+.menu
+{
+	float: left;
+}
+
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ptut</title>
+        
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	    <script src="http://code.jquery.com/jquery-1.7.2.min.js"integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ="crossorigin="anonymous"></script>
+		<script type="text/javascript" src="Graph.js"></script>
+
+        <link rel="stylesheet" href="StyleGraph.css" />
+    </head>
+
+    <body>
+    <div id="container" class="graph"></div>
+    </body>
+</html>

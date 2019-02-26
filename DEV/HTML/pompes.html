@@ -1,0 +1,56 @@
+<html>
+<img src="..\IMAGES\image_fond.jpg" class="fond">
+<head>   
+	<link rel="stylesheet" href="..\CSS\pageCSS.css">
+	<meta charset="utf-8">
+    <script type="text/javascript" src="..\LIB\jQuery_1.7.2.js"></script>
+    <script type="text/javascript" src="..\JS\Sticky_Only_yAxis.js"></script>
+    <script type="text/javascript" src="..\JS\Menu_deroulant.js"></script>
+    <script type="text/javascript" src="..\JS\pompes.js"></script>
+    
+	<title>Jardin connecté</title>
+</head>
+
+<body> 
+ 
+    <nav id="IdMenu" class="Menu">
+    <center><img class="logo" src = "..\IMAGES\Greencode.png"/></center> 
+        <ul class="Bouton">
+            <li class="principal"><a href="index.html" target="_top" id="#Acceuil" class="#Acceuil" onclick="actif('#Acceuil')">Acceuil</a></li>
+            <li class="principal"><a href="#Releves" target="_top" id="#Releves" class="#Releves" onclick="actif('#Releves')">Relevés</a>
+                <ul>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Température</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Humidité</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Intensité lumineuse</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Fertilité</a></li>
+                </ul>
+            </li>
+            <li class="principal"><a href="calendrier.html" target="_top" id="#Calendrier" class="#Calendrier" onclick="actif('#Calendrier')">Calendrier</a></li>
+            <li class="principal"><a href="#Pompes" target="_top" id="active" class="#Pompes" onclick="actif('#Pompes')">Pompes</a></li>
+            <li class="principal"><a href="#Contacts" target="_top" id="#Contacts" class="#Contacts" onclick="actif('#Contacts')">Contacts</a></li>
+            <li class="principal"><a href="#Tuto" target="_top" id="#Tuto" class="#Tuto" onclick="actif('#Tuto')">Tuto</a></li>
+        </ul>
+    </nav>
+
+    <table class="pompes">
+      <tr>
+        <th><h1 class="pompes">Pompe 1</h1></th>
+        <th><h1 class="pompes">Pompe 2</h1></th> 
+
+      </tr>
+      <tr>
+        <td><img id="Pompe1" class="rotating_null" src = "../IMAGES/pompe_off.png" onclick="changeImage('Pompe1')"/></td>
+        <td><img id="Pompe2" class="rotating_null" src = "../IMAGES/pompe_off.png" onclick="changeImage('Pompe2')"/></td>
+      </tr>
+      <tr>
+        <th><h1 class="pompes">Pompe 3</h1></th>
+        <th><h1 class="pompes">Pompe 4</h1></th>
+      </tr>
+      <tr>
+        <td><img id="Pompe3" class="rotating_null" src = "../IMAGES/pompe_off.png" onclick="changeImage('Pompe3')"/></td>
+        <td><img id="Pompe4" class="rotating_null" src = "../IMAGES/pompe_off.png" onclick="changeImage('Pompe4')"/></td>
+      </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<img src="..\IMAGES\image_fond.jpg" class="fond" ;>
+<head>   
+	<link rel="stylesheet" href="..\CSS\pageCSS.css">
+	<meta charset="utf-8">
+	<!-- info graph > -->
+	<script type="text/javascript" src="..\LIB\Highcharts-6.1.4\code\highcharts.js"></script>
+	<script type="text/javascript" src="..\LIB\jQuery_1.7.2.js"></script>
+	<script type="text/javascript" src="..\JS\Sticky_Only_yAxis.js"></script>
+	<script type="text/javascript" src="..\JS\Menu_deroulant.js"></script>
+	<script type="text/javascript" src="..\JS\Graph.js"></script>
+	<title>Jardin connecté</title>
+
+</head>
+
+<body>
+ 	
+    <nav id="IdMenu" class="Menu">
+    <center><img class="logo" src = "..\IMAGES\Greencode.png"/></center> 
+        <ul class="Bouton">
+            <li class="principal"><a href="index.html" target="_top" id="#Acceuil" class="#Acceuil" onclick="actif('#Acceuil')">Acceuil</a></li>
+            <li class="principal"><a href="#Releves" target="_top" id="active" class="#Releves" onclick="actif('#Releves')">Relevés</a>
+                <ul>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Température</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Humidité</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Intensité lumineuse</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves.html">Fertilité</a></li>
+                </ul>
+            </li>
+            <li class="principal"><a href="#Calendrier" target="_top" id="#Calendrier" class="#Calendrier" onclick="actif('#Calendrier')">Calendrier</a></li>
+            <li class="principal"><a href="pompes.html" target="_top" id="#Pompes" class="#Pompes" onclick="actif('#Pompes')">Pompes</a></li>
+            <li class="principal"><a href="#Contacts" target="_top" id="#Contacts" class="#Contacts" onclick="actif('#Contacts')">Contacts</a></li>
+            <li class="principal"><a href="#Tuto" target="_top" id="#Tuto" class="#Tuto" onclick="actif('#Tuto')">Tuto</a></li>
+        </ul>
+    </nav>
+	
+	<div id="container" class="graph1"></div>
+
+	<div id="graphLuminosite" class="graph2"></div>
+
+	<div id="graphFertilite" class="graph3"></div>
+
+	<div class="temperature">
+		<img src="../IMAGES/logo_temperature.png" class="logoTemperature">
+		<p id="temp" class="releves">°C</p>
+	</div>
+
+	<div class="humidite">
+		<img src="../IMAGES/logo_humidite.png" class="logoHumidite">
+		<p id="humi" class="releves">%</p>
+	</div>
+
+	<div class="luminosite">
+		<img src="../IMAGES/logo_luminosite.png" class="logoHumidite">
+		<p id="lumi" class="releves">%</p>
+	</div>   
+
+	<div class="fertilite">
+		<img src="../IMAGES/logo_fertilite.png" class="logoHumidite">
+		<p id="fert" class="releves">%</p>
+	</div>  
+  
+
+</body>
+</html>

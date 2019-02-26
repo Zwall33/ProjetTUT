@@ -1,0 +1,55 @@
+<html>
+<img src="image fond.jpg" class="fond" ;>
+<head>
+	<meta name="viewport" content="width=device-width", initial-scale=1> <!--rajout css3 et zoom initial(initial-scale=1)-->
+	<link rel="stylesheet" href="pageCSS.css">
+	<meta charset="utf-8">
+	<title>Jardin connecté</title>
+	<!-- info graph > -->
+	<script type="text/javascript" src="Highcharts-6.1.4\code\highcharts.js"></script>
+	<script type="text/javascript" src="jQuery_1.7.2.js"></script>
+	<script type="text/javascript" src="Graph.js"></script>
+
+</head>
+
+<body>
+ 	
+ 	<ul>
+ 		<center><img src="logo v1.png" class="logo" ;></center>
+ 		<nav class="Bouton">
+			<li><a href="index.html" target="_top">Home</a></li>
+			<li><a href="new.html" target="_top" class="active">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+		</nav>
+	</ul>
+	
+
+	<div id="container" class="graph1"></div>
+
+	<div id="graphLuminosite" class="graph2"></div>
+
+	<div id="graphFertilite" class="graph3"></div>
+
+	<div class="temperature">
+		<img src="logo_temperature.png" class="logoTemperature">
+		<p id="temp" class="relever">°C</p>
+	</div>
+
+	<div class="humidite">
+		<img src="logo_humidite.png" class="logoHumidite">
+		<p id="humi" class="relever">%</p>
+	</div>
+
+	<div class="luminosite">
+		<img src="logo_luminosite.png" class="logoHumidite">
+		<p id="lumi" class="relever">%</p>
+	</div>   
+
+	<div class="fertilite">
+		<img src="logo_fertilite.png" class="logoHumidite">
+		<p id="fert" class="relever">%</p>
+	</div>  
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+"shell_cmd" : "gcc $ coucou.html -o $ {coucou.html}" ,  
+"working_dir" : "$ C:\Users\Vincent\Desktop\prog sublime\coucou.html" ,  
+"variantes" :
+  [
+    {
+      "nom" : "Exécuter" , 
+      "shell_cmd" : "gcc $ coucou.html -o $ {coucou.html} && $ {C:\Users\Vincent\Desktop\prog sublime\coucou.html} / $ {coucou.html}" 
+    }
+  ]
+}
